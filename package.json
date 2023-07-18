@@ -13,9 +13,10 @@
     "start": "next start",
     "lint": "next lint",
     "turbo": " next dev --turbo",
-    "format": "next lint --fix && prettier '**/*.{json}' --write --ignore-path .gitignore",
+    "format": "next lint --fix && prettier '**/*.{json,yaml}' --write --ignore-path .gitignore",
     "check-types": "tsc --noEmit --pretty",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "commit": "cz"
   },
   "dependencies": {
     "next": "13.4.1",
